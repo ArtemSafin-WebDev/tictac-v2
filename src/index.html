@@ -1,0 +1,34 @@
+{% set title = "TicTac | Главная" %} {% set activePage = "home" %} {% extends "layout-simplified.html" %} {% block content %}
+
+<section class="tictac tictac--main">
+    <div class="container tictac__main-container">
+        <div class="tictac__main-inner-wrapper">
+            <div class="tictac__main-intro">
+                <div class="tictac__main-intro-card">
+                    <a href="results.html?step=0" class="tictac__main-intro-link">
+                        Торговый представитель
+                    </a>
+                    <a href="results.html?step=1" class="tictac__main-intro-link">
+                        Супервайзер
+                    </a>
+                    <a href="results.html?step=2" class="tictac__main-intro-link">
+                        АСМ
+                    </a>
+                    <a href="results.html?step=3" class="tictac__main-intro-link">
+                        ЛКАМ
+                    </a>
+                    <a href="results.html?step=4" class="tictac__main-intro-link">
+                        Правила
+                    </a>
+                </div>
+            </div>
+            <div class="tictac__slogan-row tictac__slogan-row--main">
+                <div class="tictac__image-container">
+                    <img src="img/tictacs.png" alt="ТикТак" class="tictac__image" width="670" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

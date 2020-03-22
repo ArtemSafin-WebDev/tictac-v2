@@ -1,0 +1,2899 @@
+{% set title = "TicTac | Результаты" %} {% set activePage = "results" %} {% extends "layout.html" %} {% block content %}
+<section class="tictac">
+    <div class="container">
+        <div class="tictac__slogan-row">
+            <div class="tictac__slogan-text">
+                <div class="tictac__slogan-text-tab-item js-slogan-item">
+                    Продажи — Просто Космос!
+                </div>
+                <div class="tictac__slogan-text-tab-item js-slogan-item">
+                    <span class="small">Расширяем базу точек на космической скорости</span>
+                </div>
+                <div class="tictac__slogan-text-tab-item js-slogan-item">
+                    Твоя команда на высоте!
+                </div>
+                <div class="tictac__slogan-text-tab-item js-slogan-item">
+                    <span class="small">
+                        Сделаем продажи вселенских масштабов
+                    </span>
+                </div>
+            </div>
+            <div class="tictac__image-container">
+                <img src="img/tictacs.png" alt="ТикТак" class="tictac__image" width="670" />
+            </div>
+        </div>
+        <div class="tictac__mobile-types">
+            <div class="tictac__mobile-type js-type-item">
+                Торговый представитель
+            </div>
+            <div class="tictac__mobile-type js-type-item">
+                Супервайзер
+            </div>
+            <div class="tictac__mobile-type js-type-item">
+                АСМ
+            </div>
+            <div class="tictac__mobile-type js-type-item">
+                ЛКАМ
+            </div>
+        </div>
+        <div class="tictac__search">
+            <div class="tictac__search-wrapper">
+                <input type="search" class="tictac__search-box" id="search" />
+                <label for="search" class="tictac__search-label">
+                    Поиск по списку
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="tictac__data">
+        <div class="container">
+            <div class="tictac__data-tabs">
+                <div class="tictac__data-tab js-data-tab">
+                    <div class="tictac__info-card">
+                        <div class="tictac__info-card-header">
+                            <span class="header-number">
+                                №
+                            </span>
+                            <span class="header-name">
+                                Участник
+                            </span>
+                            <span class="header-score">
+                                <span class="large">
+                                    POSM
+                                </span>
+                            </span>
+                        </div>
+                        <div class="tictac__info-card-content">
+                            <ul class="tictac__info-card-content-list js-info-content-list">
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        1.
+                                    </span>
+                                    <span class="name">
+                                        Сергей Васильев
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        2.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        3.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        4.
+                                    </span>
+                                    <span class="name">
+                                        Петр Александров
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        5.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        6.
+                                    </span>
+                                    <span class="name">
+                                        Александр Сидоров
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        7.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        8.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        9.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        10.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        11.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        12.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        13.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        14.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        15.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        16.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        17.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        18.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        19.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        20.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        21.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        22.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tictac__data-tab js-data-tab">
+                    <div class="tictac__rocket-card js-rocket-card">
+                        <div class="tictac__rocket-card-header">
+                            <span class="header-number">
+                                №
+                            </span>
+                            <span class="header-name">
+                                Участник
+                            </span>
+                            <span class="header-score">
+                                Кол-Во<br />
+                                новых точек
+                            </span>
+                        </div>
+                        <div class="tictac__rocket-card-content">
+                            <div class="tictac__rocket-card-table-wrapper js-info-content-list">
+                                <table class="tictac__rocket-card-table">
+                                    <tbody>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    1.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            200
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    2.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            180
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    3.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            176
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    4.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            171
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    5.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            150
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    6.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            130
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    7.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            130
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    8.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            130
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    9.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    10.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    11.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    12.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    13.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            95
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    14.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            90
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    15.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            80
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    16.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    17.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    17.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    18.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    19.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    20.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            50
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tictac__data-tab js-data-tab">
+                    <div class="tictac__rocket-card js-rocket-card">
+                        <div class="tictac__rocket-card-header">
+                            <span class="header-number">
+                                №
+                            </span>
+                            <span class="header-name">
+                                Участник
+                            </span>
+                            <span class="header-score">
+                                % Выполнения<br>плана
+                            </span>
+                        </div>
+                        <div class="tictac__rocket-card-content">
+                            <div class="tictac__rocket-card-table-wrapper js-info-content-list">
+                                <table class="tictac__rocket-card-table">
+                                    <tbody>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    1.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            200
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    2.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            180
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    3.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            176
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    4.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            171
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row tictac__rocket-card-table-row--highlighted">
+                                            <td>
+                                                <span class="number">
+                                                    5.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            150
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    6.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            130
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    7.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            130
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    8.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Иван иванов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            130
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    9.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    10.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    11.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    12.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Сергей Петров
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            100
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    13.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            95
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    14.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            90
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    15.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            80
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    16.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    17.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    17.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    18.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    19.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            70
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tictac__rocket-card-table-row">
+                                            <td>
+                                                <span class="number">
+                                                    20.
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="name">
+                                                    Александр Смирнов
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="tictac__rocket-card-rating">
+                                                    <div class="tictac__rocket-card-rating-dots">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="tictac__rocket-card-score">
+                                                        <svg width="98" height="36" aria-hidden="true" class="icon-rocket">
+                                                            <use xlink:href="#rocket" />
+                                                        </svg>
+                                                        <span class="tictac__rocket-card-score-amount">
+                                                            50
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tictac__data-tab js-data-tab">
+                    <div class="tictac__info-card">
+                        <div class="tictac__info-card-header">
+                            <span class="header-number">
+                                №
+                            </span>
+                            <span class="header-name">
+                                Участник
+                            </span>
+                            <span class="header-score">
+                                Количество<br />
+                                отгрузок
+                            </span>
+                        </div>
+                        <div class="tictac__info-card-content">
+                            <ul class="tictac__info-card-content-list js-info-content-list">
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        1.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        2.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        3.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        4.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        5.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item tictac__info-card-content-list-item--highlighted">
+                                    <span class="number">
+                                        6.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        7.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        8.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        9.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        10.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        11.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        12.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        13.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        14.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        15.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        16.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        17.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        18.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        19.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        20.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        21.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                                <li class="tictac__info-card-content-list-item">
+                                    <span class="number">
+                                        22.
+                                    </span>
+                                    <span class="name">
+                                        Иван Иванов
+                                    </span>
+                                    <span class="score">
+                                        55
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

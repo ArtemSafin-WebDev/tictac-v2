@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --max-container-width: 1330px;
+    --content-padding: 40px;
+    --primary-color: #2C7D38;
+    --dark-green: #065912;
+    @include breakpoint(mobile) {
+        --content-padding: 15px;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    @include noHighlight();
+
+
+    @include breakpoint(large-desktop) {
+        font-size: 8px;
+    }
+
+    @include breakpoint(laptop) {
+        font-size: 8px;
+    }
+
+
+    @include breakpoint(tablet) {
+        font-size: 7px;
+    }
+
+    @include breakpoint(small-tablet) {
+        font-size: 5px;
+    }
+
+
+    @include breakpoint(mobile) {
+        font-size: 10px;
+    }
+}
+
+body {
+    min-width: 320px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Blogger Sans', sans-serif;
+    background-color: var(--primary-color);
+    background-color: #fff;
+    color: white;
+    font-weight: 700;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+ol {
+    counter-reset: ordered-list;
+    li {
+        counter-increment: ordered-list;
+        &::before {
+            content: counter(ordered-list) '.';
+        }
+    }
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 0;
+    font: inherit;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+   
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    resize: none;
+    box-shadow: none;
+    display: block;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    -webkit-appearance: none;
+    font: inherit;
+    outline: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    &:link,
+    &:visited {
+        color: inherit;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+img[data-sizes='auto'] {
+    display: block;
+    width: 100%;
+}
+
+img.lazyload:not([src]) {
+    visibility: hidden;
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.visually-hidden {
+    @include visuallyHidden();
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    height: auto;
+}
+
+::selection {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+
+
+.search-hidden {
+    display: none !important;
+}
