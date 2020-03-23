@@ -2,10 +2,12 @@ import polyfills from './polyfills';
 import detectTouch from './detectTouch';
 import search from './search';
 import rocketAnimation from './rocketAnimation';
+import colorizeRows from './colorizeRows';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
     detectTouch();
+    colorizeRows();
     search();
    
 });

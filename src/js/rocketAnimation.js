@@ -17,7 +17,7 @@ export default function() {
             const rowScoreElement = row.querySelector('.tictac__rocket-card-score-amount');
             const rowScore = parseInt(rowScoreElement.textContent, 10);
             const ratingElement = row.querySelector('.tictac__rocket-card-rating');
-            const bars = Array.from(row.querySelector('.tictac__rocket-card-rating-dots').children);
+            const bar = row.querySelector('.tictac__rocket-card-rating-dots span');
             const rocketElement = row.querySelector('.tictac__rocket-card-score');
 
             const counter = {
@@ -30,19 +30,12 @@ export default function() {
 
             const animationDuration = baseAnimationDuration * percentage;
 
-            // console.log('Animation duration', animationDuration);
-
-            // console.log('Percentage', percentage * bars.length);
-
-            const barsToShow = Math.floor(bars.length * percentage);
-
-            for (let step = 0; step < barsToShow; step++) {
-                bars[step].classList.add('shown');
-            }
+           
 
             ratingElement.style.setProperty('--rocket-percent', percentage * 100 + '%');
 
             rocketElement.style.setProperty('animation-duration', animationDuration + 's');
+            bar.style.setProperty('animation-duration', animationDuration + 's');
 
             if (!window.matchMedia('(max-width: 768px)').matches) {
                 const counterAnimation = anime({

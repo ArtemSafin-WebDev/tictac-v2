@@ -462,7 +462,6 @@
 
     .header-name {
         flex-grow: 1;
-        
     }
 
     .header-score {
@@ -474,13 +473,11 @@
             font-size: 2.4rem;
             line-height: 2.6rem;
             @include breakpoint(mobile) {
-               
                 font-size: 1.2rem;
                 line-height: 1.3rem;
-                
             }
         }
-       
+
         @include breakpoint(mobile) {
             width: min-content;
             font-size: 1.2rem;
@@ -538,8 +535,12 @@
     .score {
         text-align: right;
     }
-    &--highlighted {
+    &--red {
         color: #ce3a2b;
+    }
+
+    &--yellow {
+        color: #efdd11;
     }
 }
 
@@ -751,7 +752,7 @@
 //     .score {
 //         text-align: right;
 //     }
-//     &--highlighted {
+//     &--red {
 //         color: #ce3a2b;
 //     }
 // }
@@ -781,7 +782,7 @@
         padding: 1rem 3rem;
         white-space: nowrap;
         font-style: italic;
-
+        position: relative;
         &:nth-child(1) {
             padding-right: 5rem;
             @include breakpoint(mobile) {
@@ -827,21 +828,14 @@
                 background-color: #f5f5f5;
             }
         }
-
-       
     }
 }
 
-
 .tictac__rocket-card-table-row {
-   
-
-
-    &--highlighted {
+    &--red {
         td {
             color: #ce3a2b;
         }
-
 
         .tictac__rocket-card-score {
             svg {
@@ -849,10 +843,39 @@
             }
         }
 
-
         .tictac__rocket-card-rating-dots {
             & > span {
                 background-color: #ce3a2b;
+            }
+        }
+
+
+        .tictac__rocket-card-score-amount {
+            @include breakpoint(mobile) {
+                color: #ce3a2b;
+            }
+        }
+    }
+    &--yellow {
+        td {
+            color: #efdd11;
+        }
+
+        .tictac__rocket-card-score {
+            svg {
+                fill: #efdd11;
+            }
+        }
+
+        .tictac__rocket-card-rating-dots {
+            & > span {
+                background-color: #efdd11;
+            }
+        }
+
+        .tictac__rocket-card-score-amount {
+            @include breakpoint(mobile) {
+                color: #efdd11;
             }
         }
     }
@@ -860,17 +883,26 @@
 
 .tictac__rocket-card-rating {
     position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 3rem;
+    bottom: 0;
+
+
+    @include breakpoint(mobile) {
+        position: static;
+    }
 }
 
 .tictac__rocket-card-score {
-   
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateZ(0) translateY(-50%);
     backface-visibility: hidden;
     will-change: left;
-   
+
     animation-duration: 2.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
@@ -883,7 +915,7 @@
     @include breakpoint(mobile) {
         animation-name: none !important;
         left: auto;
-        
+
         position: static;
         transform: none;
         top: auto;
@@ -903,12 +935,10 @@
 @keyframes rocket-flight {
     from {
         left: 0%;
-       
     }
 
     to {
         left: calc(var(--rocket-percent, 100%) - 9.8rem);
-       
     }
 }
 
@@ -946,48 +976,37 @@
 .tictac__rocket-card-rating-dots {
     display: flex;
     align-items: center;
+    position: relative;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     @include breakpoint(mobile) {
         display: none;
     }
     & > span {
-        flex-basis: 1.6rem;
         border-radius: 1.6rem;
-        height: 0.8rem;
+        height: 0.6rem;
         background: #2c7d38;
-        margin-right: 0.8rem;
-        opacity: 0;
-       
-        animation-duration: .2s;
+        position: absolute;
+        left: 0;
+        width: 0;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-out;
         animation-fill-mode: both;
-        animation-timing-function: ease;
         animation-play-state: paused;
-
-        &:nth-child(odd) {
-            @include breakpoint(mobile) {
-                display: none;
-            }
-        }
+       
+        top: 50%;
+        transform: translateY(-50%);
 
         .animatable .tictac__data-tab.active & {
             animation-play-state: running;
-            &.shown {
-                animation-name: fade-in;
-            }
-        }
-        
-        &:last-child {
-            margin-right: 0;
-        }
-
-        @for $i from 1 through 36 {
-            &:nth-child(#{$i}) {
-                animation-delay: $i * 0.05s;
-            }
+            animation-name: bar;
         }
     }
 }
-
-
 
 @keyframes fade-in {
     from {
@@ -996,5 +1015,15 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes bar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: calc(var(--rocket-percent, 100%) - 9.8rem);
     }
 }
